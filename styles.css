@@ -1,0 +1,98 @@
+html { 
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  --white: #F9FAF8;
+  --dark: #1F2937;
+  --blue: #3882F6;
+  --gray: #E5E7EB;
+} 
+  
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.hero {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item h2 {
+  text-align: center;
+}
+
+.item img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--blue);
+  border-radius: 10%;
+}
+
+.quote {
+  background-color: var(--gray);
+}
+
+.btn-signup {
+    font-size: inherit;
+    padding: 10px 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+}
+
+
+
+/* GROUPS */
+
+header, footer, .hero {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.info, .signup {
+  background-color: var(--white);
+}
+
+.signup, .btn-signup {
+  background-color: var(--blue);
+  color: var(--white);
+}
